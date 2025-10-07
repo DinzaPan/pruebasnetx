@@ -1,0 +1,168 @@
+/* Estilos para la página de licencia */
+.license-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.license-subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.license-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.license-section {
+    background-color: var(--dark-card);
+    border-radius: var(--rounded-lg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--dark-border);
+}
+
+.license-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.license-text {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.license-text p {
+    margin-bottom: 1rem;
+}
+
+.license-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.license-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.license-list li:last-child {
+    border-bottom: none;
+}
+
+.license-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0.5rem;
+}
+
+.license-footer {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(16, 185, 129, 0.1));
+    border-radius: var(--rounded-lg);
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.license-version {
+    margin-bottom: 1rem;
+}
+
+.license-version p {
+    color: var(--dark-text);
+    font-size: 0.9rem;
+}
+
+.license-agreement p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Botón Volver Atrás en la navbar */
+.back-button-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--dark-text);
+    text-decoration: none;
+    border: none;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--rounded);
+    transition: var(--transition);
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.back-button-nav:hover {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.back-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #3b82f6;
+}
+
+/* Responsive para licencia */
+@media (max-width: 768px) {
+    .license-section {
+        padding: 1.5rem;
+    }
+    
+    .license-section-title {
+        font-size: 1.25rem;
+    }
+    
+    .license-header {
+        margin-bottom: 2rem;
+    }
+    
+    .license-footer {
+        padding: 1.5rem;
+    }
+    
+    .back-button-nav {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .back-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-button-nav {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .back-button-nav span {
+        display: none;
+    }
+    
+    .back-button-nav .back-icon {
+        margin-right: 0;
+    }
+}
