@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdwardMC - Addons para Minecraft</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <h1 class="site-title">EdwardMC</h1>
+        </div>
+        
+        <!-- Menú hamburguesa -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- Menú desplegable -->
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="menu-header">
+                <h3>Menú</h3>
+                <button class="close-menu" id="closeMenu">
+                    
+                </button>
+            </div>
+            
+            <a href="index.html" class="menu-item">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Inicio
+            </a>
+            <a href="https://discord.gg/uhgHaGa4Bv" target="_blank" class="menu-item">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m21.79 13.9-.32.35A19.73 19.73 0 0 1 12 16a19.7 19.7 0 0 1-9.47-1.75l-.32-.35"></path>
+                    <path d="M3.65 8.47c1.68-2.42 4.33-4.1 7.44-4.66"></path>
+                    <path d="M20.35 8.47A12 12 0 0 0 12 3.81"></path>
+                    <path d="M12 7.5v9"></path>
+                    <path d="M16 12h5.5"></path>
+                    <path d="M2.5 12H8"></path>
+                    <circle cx="12" cy="17" r="1"></circle>
+                </svg>
+                Discord
+            </a>
+            <a href="https://youtube.com/@edward_gamer_addon?si=6HLBISxZJP11DJB3" target="_blank" class="menu-item">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                    <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+                YouTube
+            </a>
+            <a href="./sc/licencia.html" class="menu-item">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                Licencia
+            </a>
+            
+            <div class="menu-footer">
+                <p class="copyright">
+                    <span>© Hecho por </span>
+                    <a href="https://discord.gg/RMfzSyNxjT" target="_blank" class="studio-link">MegaPixel Studios</a>
+                    <span>, Todos los derechos reservados</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Overlay para cerrar menú -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </nav>
+
+    <!-- Sección del buscador -->
+    <section class="search-section">
+        <div class="search-container">
+            <form id="searchForm" method="GET" action="" class="search-form">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar addons por título...">
+                <button type="submit" class="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h1 class="page-title">Últimos Addons</h1>
+        <div id="addonsContainer" class="addons-grid">
+            <!-- Los addons se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+
+    <script src="./js/complement.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
